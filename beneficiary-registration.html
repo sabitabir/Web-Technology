@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpSphere - Beneficiary Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #176b4d;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #666;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #176b4d;
+        }
+
+        .register-btn {
+            grid-column: 1 / -1;
+            background: #176b4d;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .register-btn:hover {
+            background: #11533b;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .login a {
+            color: #176b4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 650px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+
+            .full {
+                grid-column: auto;
+            }
+
+            .register-btn {
+                grid-column: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>HelpSphere</h1>
+        <p>Beneficiary / Recipient Registration</p>
+    </div>
+
+    <form>
+
+        <div>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" required>
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <select required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>National ID / Identification Number</label>
+            <input type="text" placeholder="Enter identification number" required>
+        </div>
+
+        <div>
+            <label>Occupation</label>
+            <input type="text" placeholder="Enter occupation">
+        </div>
+
+        <div>
+            <label>Monthly Income</label>
+            <input type="number" placeholder="Enter monthly income">
+        </div>
+
+        <div>
+            <label>Family Members</label>
+            <input type="number" min="1" placeholder="Number of family members">
+        </div>
+
+        <div>
+            <label>City / District</label>
+            <input type="text" placeholder="Enter city or district" required>
+        </div>
+
+        <div class="full">
+            <label>Address</label>
+            <textarea placeholder="Enter your complete address" required></textarea>
+        </div>
+
+        <div>
+            <label>Type of Assistance Required</label>
+            <select required>
+                <option value="">Select Assistance</option>
+                <option>Financial Assistance</option>
+                <option>Food Assistance</option>
+                <option>Medical Assistance</option>
+                <option>Educational Assistance</option>
+                <option>Emergency Assistance</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Supporting Document</label>
+            <input type="file">
+        </div>
+
+        <div class="full">
+            <label>Brief Description of Need</label>
+            <textarea placeholder="Explain why you need assistance..." required></textarea>
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" placeholder="Create password" required>
+        </div>
+
+        <div>
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm password" required>
+        </div>
+
+        <button type="submit" class="register-btn">
+            Register as Beneficiary
+        </button>
+
+    </form>
+
+    <div class="login">
+        Already have an account?
+        <a href="#">Login</a>
+    </div>
+
+</div>
+
+</body>
+</html>
