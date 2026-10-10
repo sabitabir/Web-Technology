@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpSphere - Beneficiary Registration</title>
+</head>
+<body>
+
+    <h1>HelpSphere</h1>
+    <h2>Beneficiary / Recipient Registration</h2>
+    <p>Register to request assistance through HelpSphere.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="date_of_birth" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+            <br><br>
+
+            <label for="national-id">National ID / Identification Number:</label>
+            <input type="text" id="national-id" name="national_id" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address and Household Information</legend>
+
+            <label for="address">Full Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <br><br>
+
+            <label for="district">City / District:</label>
+            <input type="text" id="district" name="district" required>
+            <br><br>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation">
+            <br><br>
+
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" name="monthly_income" min="0">
+            <br><br>
+
+            <label for="family-members">Number of Family Members:</label>
+            <input type="number" id="family-members" name="family_members" min="1">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Assistance Details</legend>
+
+            <label for="assistance">Type of Assistance Required:</label>
+            <select id="assistance" name="assistance_type" required>
+                <option value="">Select Assistance</option>
+                <option value="financial">Financial Assistance</option>
+                <option value="food">Food Assistance</option>
+                <option value="medical">Medical Assistance</option>
+                <option value="education">Educational Assistance</option>
+                <option value="emergency">Emergency Assistance</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="description">Brief Description of Need:</label>
+            <textarea id="description" name="need_description" rows="5" required></textarea>
+            <br><br>
+
+            <label for="document">Supporting Document:</label>
+            <input type="file" id="document" name="supporting_document" accept=".pdf,.jpg,.jpeg,.png">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+            <br><br>
+        </fieldset>
+
+        <button type="submit">Register as Beneficiary</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+</body>
+</html>
