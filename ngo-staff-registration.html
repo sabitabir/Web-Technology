@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpSphere - NGO Staff Registration</title>
+</head>
+<body>
+
+    <h1>HelpSphere</h1>
+    <h2>Donation Coordinator / NGO Staff Registration</h2>
+    <p>Register your organization and submit your details for administrator approval.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Staff Information</legend>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
+            <br><br>
+
+            <label for="email">Official Email Address:</label>
+            <input type="email" id="email" name="official_email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <label for="staff-id">Staff ID:</label>
+            <input type="text" id="staff-id" name="staff_id" required>
+            <br><br>
+
+            <label for="designation">Position / Designation:</label>
+            <input type="text" id="designation" name="designation" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Organization Information</legend>
+
+            <label for="organization">NGO / Organization Name:</label>
+            <input type="text" id="organization" name="organization_name" required>
+            <br><br>
+
+            <label for="registration-number">NGO Registration Number:</label>
+            <input type="text" id="registration-number" name="ngo_registration_number" required>
+            <br><br>
+
+            <label for="organization-type">Organization Type:</label>
+            <select id="organization-type" name="organization_type" required>
+                <option value="">Select Organization Type</option>
+                <option value="ngo">Non-Governmental Organization</option>
+                <option value="charity">Charity Organization</option>
+                <option value="nonprofit">Non-Profit Organization</option>
+                <option value="community">Community Organization</option>
+                <option value="relief">Relief Organization</option>
+            </select>
+            <br><br>
+
+            <label for="address">Organization Address:</label>
+            <textarea id="address" name="organization_address" rows="4" required></textarea>
+            <br><br>
+
+            <label for="areas">Areas of Operation:</label>
+            <input type="text" id="areas" name="areas_of_operation" required>
+            <br><br>
+
+            <label for="website">Organization Website:</label>
+            <input type="url" id="website" name="organization_website">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Verification Documents</legend>
+
+            <label for="ngo-document">NGO Registration Document:</label>
+            <input type="file" id="ngo-document" name="ngo_document" accept=".pdf,.jpg,.jpeg,.png" required>
+            <br><br>
+
+            <label for="staff-document">Staff Identification Document:</label>
+            <input type="file" id="staff-document" name="staff_document" accept=".pdf,.jpg,.jpeg,.png" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+            <br><br>
+        </fieldset>
+
+        <p>Registration will remain pending until an administrator verifies and approves the account.</p>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+</body>
+</html>
