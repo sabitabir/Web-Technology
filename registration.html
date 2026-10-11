@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Registration - helpSphere</title>
+</head>
+<body>
+
+    <h1>HelpSphere</h1>
+    <h2>Registration</h2>
+
+    <form action="registration_action.html" >
+
+        <label for="role">Register as a/an:</label><br>
+        <select id="role" name="role" required>
+            <option value="">-- Select your role --</option>
+            <option value="donor">Donor</option>
+            <option value="recipient">Beneficiary / Recipient</option>
+            <option value="coordinator">Donation Coordinator / NGO Staff</option>
+            <option value="admin">Administrator</option>
+        </select>
+
+        <br><br>
+
+        <h3>Admin Registration Form</h3>
+
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required>
+        <br><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required>
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="nid">NID Number:</label><br>
+        <input type="text" id="nid" name="nid" required>
+        <br><br>
+
+        <label for="recovery">Recovery Email:</label><br>
+        <input type="email" id="recovery" name="recovery" required>
+        <br><br>
+
+        <label for="verification">Security Verification Method:</label><br>
+        <select id="verification" name="verification" required>
+            <option value=""> Select a method </option>
+            <option value="email">Email OTP</option>
+            <option value="phone">Phone OTP</option>
+        </select>
+        <br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" required>
+        <br><br>
+
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">
+            I agree to the admin privacy and security rules.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <p>Already have an account?
+        <a href="../Common/login.html">Login</a>
+    </p>
+
+</body>
+</html>
