@@ -1,0 +1,4 @@
+/* Role-specific accents for the beneficiary dashboard. */
+:root{--role-accent:#52816a}
+.topbar-kicker{color:var(--role-accent)}
+.stat-card:nth-child(1) .stat-icon{background:#eaf4ed}
