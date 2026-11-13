@@ -1,0 +1,4 @@
+/* Role-specific accents for the ngo-staff dashboard. */
+:root{--role-accent:#427a67}
+.topbar-kicker{color:var(--role-accent)}
+.stat-card:nth-child(1) .stat-icon{background:#eaf4ed}
