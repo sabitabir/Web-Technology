@@ -1,0 +1,111 @@
+/* Element Selector */
+body {
+background-color: aliceblue;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+color: black;
+}
+
+/* Heading Styling */
+h1 {
+background-color: navy;
+color: white;
+text-align: center;
+padding: 25px;
+margin: 0;
+box-shadow: 0 2px 5px gray;
+}
+
+h2 {
+text-align: center;
+color: navy;
+margin-top: 30px;
+}
+
+/* Form Styling */
+form {
+background-color: white;
+max-width: 350px;
+margin: 20px auto;
+padding: 25px;
+border: 1px solid lightgray;
+border-radius: 10px;
+box-shadow: 0 4px 10px silver;
+}
+
+/* Label Styling */
+label {
+font-size: 14px;
+font-weight: bold;
+}
+
+/* Input Field Styling */
+#email, #password {
+width: 100%;
+padding: 10px;
+margin-top: 8px;
+box-sizing: border-box;
+border: 1px solid gray;
+border-radius: 5px;
+}
+
+/* Input Hover Effect */
+#email:hover, #password:hover {
+border-color: navy;
+}
+
+/* Input Focus Effect */
+#email:focus, #password:focus {
+background-color: aliceblue;
+outline: 1px solid navy;
+}
+
+/* Submit Button */
+input[type="submit"] {
+background-color: navy;
+color: white;
+padding: 10px 25px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover {
+background-color: royalblue;
+}
+
+/* Link Styling */
+a {
+color: navy;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+/* Link Hover Effect */
+a:hover {
+color: darkorange;
+text-decoration: underline;
+}
+
+/* Paragraph Styling */
+p {
+font-size: 14px;
+line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+form {
+width: 85%;
+padding: 20px;
+}
+
+
+h1 {
+    font-size: 26px;
+}
+
+}
