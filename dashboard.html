@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Admin Panel -HelpsSphere </title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+
+<h1>HelpSphere</h1>
+<h2>Admin Panel </h2>
+
+<p>Welcome, Administrator!</p>
+<p>Manage and monitor the  Donation Management System.</p>
+
+<hr>
+
+<h3>Admin Menu</h3>
+
+<ul>
+    <li><a href="admin_dashboard.html">Dashboard</a></li>
+    <li><a href="manage_users.html">Manage Users</a></li>
+    <li><a href="manage_donations.html">Manage Donations</a></li>
+    <li><a href="manage_requests.html">Manage Requests</a></li>
+    <li><a href="donation_history.html">Donation History</a></li>
+    <li><a href="reports.html">Reports</a></li>
+    <li><a href="../common/login.html">Logout</a></li>
+</ul>
+
+<h2>Search Donations</h2>
+
+<form action="dashboard.html" >
+
+    <label for="donationID">Donation ID:</label><br>
+    <input type="text" id="donationID" name="donationID">
+    <br><br>
+
+    <label for="donationType">Donation Type:</label><br>
+    <select id="donationType" name="donationType">
+        <option value="">All Types</option>
+        <option value="food">Food</option>
+        <option value="clothes">Clothes</option>
+        <option value="books">Books</option>
+        <option value="medical">Medical Supplies</option>
+    </select>
+    <br><br>
+
+    <label for="status">Donation Status:</label><br>
+    <select id="status" name="status">
+        <option value="">All Statuses</option>
+        <option value="available">Available</option>
+        <option value="requested">Requested</option>
+        <option value="completed">Completed</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Search Donations">
+
+</form>
+
+<hr>
+
+<h2>User Management</h2>
+
+
+<a href="manage_users.html">Manage Users</a>
+
+<hr>
+
+<h2>Donation Management</h2>
+
+<a href="manage_donations.html">Manage Donations</a>
+
+<hr>
+
+<h2>Donation Requests</h2>
+
+<a href="manage_requests.html">Manage Requests</a>
+
+<hr>
+
+<h2>Donation History</h2>
+
+<a href="donation_history.html">View Donation History</a>
+
+<hr>
+
+<h2>Reports</h2>
+
+<a href="reports.html">View Reports</a>
+
+<hr>
+
+<h2>Recent Donation Activities</h2>
+
+<table border="1">
+
+    <tr>
+        <th>Donation ID</th>
+        <th>Donation Type</th>
+        <th>Donor Name</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>D001</td>
+        <td>Books</td>
+        <td>Donor A</td>
+        <td>Available</td>
+    </tr>
+
+    <tr>
+        <td>D002</td>
+        <td>Clothes</td>
+        <td>Donor B</td>
+        <td>Requested</td>
+    </tr>
+
+    <tr>
+        <td>D003</td>
+        <td>Food</td>
+        <td>Donor C</td>
+        <td>Completed</td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
